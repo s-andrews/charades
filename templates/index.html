@@ -1,0 +1,13 @@
+{% extends "bootstrap/base.html" %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet"
+      href="{{url_for('.static', filename='charades.css')}}">
+{% endblock %}
+
+{% block title %}Musicals Charades{% endblock %}
+
+{% block content %}
+<div class="jumbotron text-center"><h1>Musicals Charades</h1></div>
+{% endblock %}
