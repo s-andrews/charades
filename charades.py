@@ -7,3 +7,8 @@ bootstrap = Bootstrap(app)
 @app.route('/')
 def index():
     return render_template('index.html')
+
+
+@app.route('/game/<gameid>')
+def game(gameid):
+    return render_template('game.html', gameeid=gameid)
